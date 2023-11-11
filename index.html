@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <meta name="keywords" content="canvas, Runge-Kutta, RKF4(5), RKF45, three bodies, physics animation, JavaScript">
+        <meta name="description" content="Three bodies interacting with gravity, Runge-Kutta solved in real time">
+        <meta name="author" content="Jorge Pap" >
+        <title>Gravitational bounded bodies</title>
+        <script src="./index.js"></script>
+    </head>
+    <body>
+    	  <h1>Three bodies interacting with gravity. Runge-Kutta-Fehlberg solved.</h1>	
+        <div id="container" 
+            onwheel="wheelHandler(event)"
+            ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true">
+            <canvas id="my-canvas"></canvas>
+        </div>
+    </body>
+</html>
